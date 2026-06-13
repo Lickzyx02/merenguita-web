@@ -43,27 +43,27 @@ setInterval(updateCounter, 1000);
 const photos = [
 
     {
-        src: "img/foto11.jpg",
+        src: "foto11.jpg",
         
     },
 
     {
-        src: "img/foto12.jpg",
+        src: "foto12.jpg",
         
     },
 
     {
-        src: "img/foto16.jpg",
+        src: "foto16.jpg",
         
     },
 
     {
-        src: "img/foto14.jpg",
+        src: "foto14.jpg",
         
     },
 
     {
-        src: "img/foto15.jpg",
+        src: "foto15.jpg",
        
     }
 
