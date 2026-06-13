@@ -1,244 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Merenguita | Pastelería Artesanal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Lucas ❤️ Belu</title>
 
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAV -->
+    <!-- Fondo -->
+    <div class="background-glow"></div>
 
-  <nav>
+    <!-- HERO -->
+    <section class="hero">
 
-    <div class="logo">
-      <img src="logo.png" alt="Logo de Merenguita">
-      <h2>Merenguita</h2>
-    </div>
+        <div class="hero-content">
 
-    <div class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#pedidos">Pedidos</a>
-    </div>
+            <p class="small-text">
+                Un pequeño regalo para vos
+            </p>
 
-  </nav>
+            <h1>
+                Lu <span>❤️</span> Belu
+            </h1>
 
-  <!-- HERO -->
+            <p class="hero-subtitle">
+                Hace apenas un mes que empezó todo.
+            <br>
+            Y ya me regalaste algunos de los momentos
+            más lindos de mi vida ❤️
+            </p>
 
-  <section class="hero">
-
-    <div class="hero-text">
-
-      <h1>
-        Postres artesanales hechos con amor 🧁
-      </h1>
-
-      <p>
-        Cheesecakes, cupcakes, boxes dulces y muchísimo más.
-        Todo preparado de forma casera con ingredientes de calidad ✨
-      </p>
-
-      <div class="buttons">
-
-        <a href="#productos" class="btn btn-primary">
-          Ver catálogo
-        </a>
-
-        <a href="https://wa.me/59894103401" class="btn btn-secondary">
-          Hacer pedido
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="hero-image">
-      <img src="postre.jpg" alt="">
-    </div>
-
-  </section>
-
-  <!-- PRODUCTOS -->
-
-  <section class="products" id="productos">
-
-    <div class="section-title">
-      <h2>Nuestros favoritos ✨</h2>
-      <p>Los postres más pedidos de Merenguita</p>
-    </div>
-
-    <div class="product-grid">
-
-      <div class="card">
-
-        <img src="cheesecake.JPG" alt="Cheesecake">
-
-        <div class="card-content">
-
-          <h3>Cheesecake</h3>
-
-          <p>
-            Cremoso, suave y con toppings irresistibles 🍓
-          </p>
-
-          <span class="price">
-            Desde $300
-          </span>
-
-          <a href="#" class="btn btn-primary">
-            Pedir ahora
-          </a>
+            <a href="#story" class="scroll-btn">
+                Descubrí tu regalo ↓
+            </a>
 
         </div>
 
-      </div>
+    </section>
 
-      <div class="card">
+    <!-- FRASES -->
+    <section id="story" class="story-section">
 
-        <img src="lemon-pie.JPG" alt="Lemon Pie">
+        <div class="story-card">
+            <h2>Gracias por...</h2>
 
-        <div class="card-content">
+            <div class="typing-container">
 
-          <h3>Lemon Pie</h3>
+                <p class="typing-text">
+                    cada abrazo.
+                </p>
 
-          <p>
-            El clásico postre cítrico con merengue suave y dulce 🍋
-          </p>
+                <p class="typing-text">
+                    cada momento.
+                </p>
 
-          <span class="price">
-            Desde $240
-          </span>
+                <p class="typing-text">
+                    hacer mis días mejores.
+                </p>
 
-          <a href="#" class="btn btn-primary">
-            Pedir ahora
-          </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CARRUSEL -->
+    <section class="gallery-section">
+
+        <h2>Nuestros recuerdos ❤️</h2>
+
+        <div class="slider">
+
+            <img id="slider-image" src="img/foto1.jpg" alt="Nosotros">
+
+            <div class="slider-overlay">
+
+                <p id="slider-caption">
+                    Un mes.
+                </p>
+
+            </div>
 
         </div>
 
-      </div>
+    </section>
 
-      <div class="card">
+    <!-- CONTADOR -->
+    <section class="counter-section">
 
-        <img src="cupcakes.JPG" alt="Cupcakes">
+        <h2>Tiempo juntos</h2>
 
-        <div class="card-content">
+        <div class="counter-grid">
 
-          <h3>Postre 3</h3>
+            <div class="counter-box">
+                <span id="days">0</span>
+                <p>Días</p>
+            </div>
 
-          <p>
-            Descripción del postre 3. Puedes personalizarlo con tus sabores y toppings favoritos 🎂
-          </p>
+            <div class="counter-box">
+                <span id="hours">0</span>
+                <p>Horas</p>
+            </div>
 
-          <span class="price">
-            Desde $
-          </span>
+            <div class="counter-box">
+                <span id="minutes">0</span>
+                <p>Minutos</p>
+            </div>
 
-          <a href="#" class="btn btn-primary">
-            Pedir ahora
-          </a>
+            <div class="counter-box">
+                <span id="seconds">0</span>
+                <p>Segundos</p>
+            </div>
 
         </div>
 
-      </div>
+    </section>
 
-    </div>
+    <!-- POLAROIDS -->
+    <section class="polaroid-section">
 
-  </section>
+        <h2>Momentos favoritos</h2>
 
-  <!-- ABOUT -->
+        <div class="polaroid-grid">
 
-  <section class="about" id="nosotros">
+            <div class="polaroid">
+                <img src="img/foto2.jpg">
+                <p>El primer detallito 💗</p>
+            </div>
 
-    <img src="logo.png" alt="logo">
+            <div class="polaroid">
+                <img src="img/foto3.jpg">
+                <p>Una tarde perfecta</p>
+            </div>
 
-    <div class="about-text">
+            <div class="polaroid">
+                <img src="img/foto4.jpg">
+                <p>Mi sonrisa favorita</p>
+            </div>
 
-      <h2>Sobre Merenguita 💖</h2>
+            <div class="polaroid">
+                <img src="img/foto5.jpg">
+                <p>Lo que generas en mi 💕</p>
+            </div>
 
-      <p>
-        Somos un emprendimiento de repostería artesanal de Ciudad de la Costa.
-        Nos encanta crear postres ricos, lindos y hechos con muchísimo cariño ✨
-      </p>
+             <div class="polaroid">
+                <img src="img/foto6.jpg">
+                <p>Mi modelo favorita 😁</p>
+            </div>
+            
+             <div class="polaroid">
+                <video controls muted loop playsinline>
+                    <source src="img/video1.mp4" type="video/mp4">
+                </video>
+                <p>13/5 💗</p>
+            </div>
 
-      <p>
-        Cada pedido es preparado de forma casera para que cada cliente tenga una experiencia especial 🍰
-      </p>
+             <div class="polaroid">
+                <img src="img/foto7.jpg">
+                <p>Por más momentos asi</p>
+            </div>
 
-    </div>
+            <div class="polaroid">
+                <video controls muted loop playsinline>
+                    <source src="img/video2.mp4" type="video/mp4">
+                </video>
+                <p>La vez que mostraste una parte tuya que me hizo enamorarme aún más</p>
+            </div>
 
-  </section>
+            <div class="polaroid">
+                <img src="img/foto8.jpg">
+                <p>Sos lo que siempre quise</p>
+            </div>
+            
+             <div class="polaroid">
+                <img src="img/foto9.jpg">
+                <p>Lo que se volvió uno de mis pasatiempos preferidos</p>
+            </div>
+            
+             <div class="polaroid">
+                <video controls muted loop playsinline>
+                    <source src="img/video3.mp4" type="video/mp4">
+                </video>
+                <p>Las cosas que me hacen quedarme sin palabras, y me derriten por adentro</p>
+            </div>
 
-  <!-- PEDIDOS -->
+            <div class="polaroid">
+                <img src="img/foto10.jpg">
+                <p>En fin, TE AMO ❤️</p>
+            </div>
 
-  <section class="order" id="pedidos">
+    </section>
 
-    <div class="section-title">
-      <h2>¿Cómo hacer un pedido?</h2>
-      <p>Súper fácil y rápido 💌</p>
-    </div>
+    <!-- SOBRE -->
+    <section class="letter-section">
 
-    <div class="steps">
 
-      <div class="step">
-        <h3>1. Elegí</h3>
-        <p>Elegí tu postre favorito del catálogo.</p>
-      </div>
+        <div class="envelope-container">
 
-      <div class="step">
-        <h3>2. Personalizá</h3>
-        <p>Elegí sabores, toppings y cantidad.</p>
-      </div>
+            <div id="envelope" class="envelope">
 
-      <div class="step">
-        <h3>3. Contactanos</h3>
-        <p>Mandanos el pedido por WhatsApp.</p>
-      </div>
+                <div class="envelope-front"></div>
 
-      <div class="step">
-        <h3>4. Disfrutá</h3>
-        <p>Coordinamos entrega y listo ✨</p>
-      </div>
+                <div class="letter">
 
-    </div>
+                    <h3>Para Belu ❤️</h3>
 
-  </section>
+                    <p>
+                        Este es solo el primer capítulo de una historia
+                        que espero que siga creciendo todos los días.
+                    </p>
 
-  <!-- FOOTER -->
+                    <p>
+                        Gracias por estar conmigo, por acompañarme
+                        y por hacerme tan feliz.
+                    </p>
 
-  <footer>
+                    <p>
+                        Te amo muchísimo.
+                    </p>
 
-    <h3>Merenguita</h3>
+                    <p class="signature">
+                        Lu ❤️
+                    </p>
 
-    <p>
-      Repostería artesanal hecha con amor 🩷
-    </p>
+                </div>
 
-    <p>
-      Ciudad de la Costa, Uruguay
-    </p>
+            </div>
 
-  </footer>
+        </div>
 
-  <!-- WHATSAPP -->
+    </section>
 
-  <a 
-    class="whatsapp"
-    href="https://wa.me/59800000000"
-    target="_blank"
-  >
-    ✆
-  </a>
+    <!-- FINAL -->
+    <section class="final-section">
+
+        <h2>
+            El primero de muchos...
+        </h2>
+
+        <p>
+            ❤️
+        </p>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

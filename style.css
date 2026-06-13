@@ -1,0 +1,575 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#09090f;
+    color:white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* =========================
+   FONDO
+========================= */
+
+.background-glow{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,120,180,.15), transparent 25%),
+        radial-gradient(circle at 80% 30%, rgba(255,180,220,.08), transparent 25%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,.05), transparent 30%),
+        #09090f;
+}
+
+.background-glow::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    backdrop-filter:blur(100px);
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+section{
+
+    min-height:auto;
+
+    padding:100px 25px;
+
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    text-align:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.small-text{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#b8b8c5;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(4rem,10vw,8rem);
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    display:inline-block;
+    animation:heartbeat 2s infinite;
+}
+
+.hero-subtitle{
+    font-size:1.4rem;
+    color:#d4d4d8;
+    line-height:1.8;
+    margin-bottom:50px;
+}
+
+.scroll-btn{
+    text-decoration:none;
+    color:white;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:20px 40px;
+
+    border-radius:999px;
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+}
+
+.scroll-btn:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,.08);
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.story-card,
+.counter-section,
+.gallery-section,
+.polaroid-section,
+.letter-section,
+.final-section{
+
+    width:100%;
+    max-width:1200px;
+}
+
+.story-card{
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:60px;
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+}
+
+.story-card h2{
+    font-size:3rem;
+    margin-bottom:40px;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+.typing-text{
+    font-size:1.4rem;
+    margin:25px 0;
+    color:#e5e5e5;
+}
+
+/* =========================
+   GALERIA PRINCIPAL
+========================= */
+
+.gallery-section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.slider{
+    position:relative;
+
+    width:100%;
+    height:70vh;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 20px 80px rgba(0,0,0,.4);
+}
+
+.slider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slider-overlay{
+    position:absolute;
+    bottom:0;
+    width:100%;
+
+    padding:40px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+.slider-overlay p{
+    font-size:1.3rem;
+}
+
+/* =========================
+   CONTADOR
+========================= */
+
+.counter-section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.counter-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:25px;
+}
+
+.counter-box{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    backdrop-filter:blur(20px);
+}
+
+.counter-box span{
+    font-size:2rem;
+    font-weight:700;
+
+    display:block;
+}
+
+.counter-box p{
+    margin-top:10px;
+    color:#cfcfd8;
+}
+
+/* =========================
+   POLAROIDS
+========================= */
+
+.polaroid-section h2{
+    text-align:center;
+    margin-bottom:60px;
+
+    font-size:3rem;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+.polaroid-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+    width:100%;
+}
+
+.polaroid{
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    color:black;
+
+    transition:.4s;
+
+    width:100%;
+
+    max-width:320px;
+
+    margin:auto;
+}
+
+.polaroid:hover{
+    transform:
+        rotate(2deg)
+        scale(1.03);
+}
+
+.polaroid img{
+
+    width:100%;
+    height:300px;
+
+    object-fit:cover;
+}
+
+.polaroid p{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    font-weight:500;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.letter-section{
+    text-align:center;
+}
+
+.letter-section h2{
+    font-size:3rem;
+    margin-bottom:50px;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+.envelope-container{
+    display:flex;
+    justify-content:center;
+}
+
+.envelope{
+
+    width:350px !important;
+    height:380px !important;
+    min-width:350px !important;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.6s;
+    margin:auto;
+}
+
+.envelope:hover{
+    transform:scale(1.03);
+}
+
+.envelope-front{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f4d7e5,
+        #ffffff
+    );
+
+    border-radius:20px;
+}
+
+.letter{
+
+    position:absolute;
+
+    width:calc(100% - 30px);
+    height:calc(100% - 30px);
+
+    top:15px;
+    left:15px;
+
+    background:white;
+    color:black;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    overflow-y:auto;
+
+    z-index:2;
+    
+}
+
+.letter h3{
+    margin-bottom:20px;
+}
+
+.letter p{
+    line-height:1.8;
+}
+
+.signature{
+    margin-top:25px;
+    font-weight:600;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final-section{
+    flex-direction:column;
+    text-align:center;
+}
+
+.final-section h2{
+
+    font-size:4rem;
+
+    font-family:'Cormorant Garamond', serif;
+
+    margin-bottom:20px;
+}
+
+.final-section p{
+    font-size:4rem;
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes heartbeat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    25%{
+        transform:scale(1.15);
+    }
+
+    50%{
+        transform:scale(1);
+    }
+
+    75%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .story-card{
+        padding:40px 25px;
+    }
+
+    .slider{
+        height:50vh;
+    }
+
+    .envelope{
+        width:100%;
+        max-width:400px;
+    }
+
+    .final-section h2{
+        font-size:2.5rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+        line-height:0.95;
+    }
+
+    .hero-subtitle{
+        font-size:1.1rem;
+        line-height:1.6;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .slider{
+        height:55vh;
+    }
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+@media(max-width:768px){
+
+    .counter-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:15px;
+    }
+
+    .counter-box{
+
+        padding:25px 10px;
+    }
+
+    .counter-box span{
+
+        font-size:1.8rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .gallery-section,
+    .counter-section,
+    .polaroid-section,
+    .letter-section{
+
+        text-align:center;
+    }
+
+    h2{
+        margin-bottom:40px;
+    }
+
+}
+
+.polaroid video{
+
+    width:100%;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:5px;
+}
